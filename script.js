@@ -71,7 +71,7 @@ async function getDashBoardData(citta) {
     const query = "?search="
     let results
 
-    const cityNameCountry = fetchData("https://www.meteofittizio.it")
+    const cityNameCountry = fetchData("https://www.meteofittizio.it" *)
     const cityWeather = fetchData("https://www.meteofittizio.it")
     const cityAirport = fetchData(api + "airports" + query + citta)
     results = await Promise.allSettled([cityNameCountry, cityWeather, cityAirport])
